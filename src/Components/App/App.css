@@ -1,0 +1,87 @@
+@font-face {
+  font-family: SourceSansPro;
+  src: url('../../Fonts/SourceSansPro.ttf');
+}
+
+@font-face {
+  font-family: SourceSansProLight;
+  src: url('../../Fonts/SourceSansProLight.ttf');
+}
+
+.App, body {
+  text-align: center;
+  margin: auto;
+  background: #F7F7F7;
+  height: 100%;
+  font-family: SourceSansPro;
+}
+
+.App {
+  margin: 20px 20px 60px 20px;
+}
+
+.App-logo {
+  height: 80px;
+}
+
+.restaurant {
+  display: flex;
+  width: 100%;
+}
+
+.restaurant div {
+  width: 33.33%;
+  min-height: 100px;
+  float: left;
+  border-radius: 3px;
+  background: #FFF;
+  box-shadow: #D0D0D0 0 1px 2px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .restaurant {
+    display: block;
+    float: left;
+  }
+
+  .restaurant div {
+    width: 90%;
+    margin: 2% 5%;
+  }
+}
+
+.restaurant h1 {
+  margin: 0;
+}
+
+.reserve {
+  padding: 10px 30px;
+  color: #FFF;
+  transition: background-color 0.4s ease;
+  background-color: #DA3743;
+  border-radius: 3px;
+  width: 40px;
+}
+
+.disabled {
+  opacity: 0.8;
+}
+
+.reserve:hover {
+  background-color: #B8222D;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.success {
+  background-color: #1A9F1A;
+}
+
+.success:hover {
+  background-color: #1A9F1A;
+}

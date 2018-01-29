@@ -1,0 +1,21 @@
+.dish {
+  transition: color 0.2s ease;
+  color: #5E5E5E;
+  font-family: SourceSansProLight;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.dish:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.quantity {
+  float: right;
+  font-family: SourceSansPro;
+}
+
+.remove {
+  margin-left: 15px;
+}

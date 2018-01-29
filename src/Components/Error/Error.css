@@ -1,0 +1,26 @@
+.error-list {
+  background-color: rgba(218,55,67,.2);
+  margin: 20px 20px 50px 20px;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+.error {
+  color: #DA3743;
+  text-align: left;
+}
+
+.empty {
+  background-color: transparent;
+  padding: 0;
+  height: 72px;
+}
+
+@media screen and (max-width: 768px) {
+  .error-list {
+    float: left;
+    width: 90%;
+    margin: 20px 5% 50px 5%;
+    box-sizing: border-box;
+  }
+}
