@@ -1,3 +1,7 @@
+1. `npm install`
+2. `npm test`
+3. `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
