@@ -19,7 +19,7 @@ export const noDupeCourses = (selected, errors = []) => {
 
 export const pierreRule = (names, errors = []) => {
   if (names.indexOf("Salmon fillet") >= 0 && names.indexOf("Prawn Cocktail") >= 0) {
-    errors.push('Pierre strongly advises against the prawn cocktail and salmon filltet combination');
+    errors.push('Pierre strongly advises against the prawn cocktail and salmon fillet combination');
   }
   return errors;
 }

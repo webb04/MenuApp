@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correct error messages 1`] = `
+<div
+  className="error-list"
+>
+  <p
+    className="error"
+  >
+    Pierre strongly advises against the prawn cocktail and salmon fillet combination
+  </p>
+  <p
+    className="error"
+  >
+    Each diner cannot have more than one of the same course.
+  </p>
+  <p
+    className="error"
+  >
+    Each person must have at least two courses, one of which must be a main.
+  </p>
+</div>
+`;

@@ -9,15 +9,17 @@ import { STARTERS, MAINS, DESSERTS } from '../../menu';
 
 import './App.css';
 
+const defaultState = {
+  total: 0,
+  selected: [],
+  orderPlaced: false,
+  errors: []
+}
+
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      total: 0,
-      selected: [],
-      orderPlaced: false
-    }
-
+    this.state = defaultState;
     this.onReserve = this.onReserve.bind(this);
     this.clear = this.clear.bind(this);
   }
@@ -62,7 +64,7 @@ class App extends Component {
         </header>
         <div>
           <h1>Reservation for 2</h1>
-          { total > 0 ? <h2>{ `£${total}`}</h2> : <h2 className="hidden">{ `£${total}`}</h2> }
+          { total > 0 ? <h2 className="total">{ `£${total}`}</h2> : <h2 className="hidden">{ `£${total}`}</h2> }
         </div>
         <div className="restaurant">
           <Course title={ 'Starters' } dishes={ STARTERS } selected={ selected } selectDish={ this.selectDish.bind(this, STARTERS) } clear={ this.clear }/>
@@ -73,6 +75,7 @@ class App extends Component {
         <div>
           <a className={ reserveClasses } onClick={ this.onReserve }>{ orderPlaced ? `Order Placed` : `Place Reservation`}</a>
         </div>
+        <a className="new-order" onClick={ () => this.setState(defaultState) }>New Order</a>
       </div>
     );
   }
